@@ -8,7 +8,7 @@ url_database = (
                 'postgresql://'
                 f'{settings.postgres_user}:'
                 f'{settings.postgres_password}'
-                '@localhost/'
+                '@databaseb:5432/'
                 f'{settings.postgres_db}'
                 )
 database = databases.Database(url_database)

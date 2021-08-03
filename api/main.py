@@ -18,7 +18,10 @@ origins = [
     "http://localhost",
 ]
 
-app = FastAPI()
+app = FastAPI(
+    openapi_url="/api/v1/openapi.json",
+    docs_url="/api/v1/docs",
+)
 
 app.add_middleware(
     CORSMiddleware,
@@ -43,7 +46,7 @@ async def shutdown():
 
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/jwt")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/api/v1/auth/jwt")
 
    
 app.include_router(
@@ -51,30 +54,30 @@ app.include_router(
     )
 
 app.include_router(
-    count_router,
-     tags=["count_appl"]
+    count_router
+    
 )
     
-# )
+
 
 app.include_router(
-    fastapi_users.get_auth_router(jwt_authentication), prefix="/auth/jwt", tags=["auth"]
+    fastapi_users.get_auth_router(jwt_authentication), prefix="/api/v1/auth/jwt", tags=["auth"]
 )
 app.include_router(
-    fastapi_users.get_register_router(on_after_register), prefix="/auth", tags=["auth"]
+    fastapi_users.get_register_router(on_after_register), prefix="/api/v1/auth", tags=["auth"]
 )
 app.include_router(
     fastapi_users.get_reset_password_router(
         settings.secret, after_forgot_password=on_after_forgot_password
     ),
-    prefix="/auth",
+    prefix="/api/v1/auth",
     tags=["auth"],
 )
 app.include_router(
     fastapi_users.get_verify_router(
         settings.secret, after_verification_request=after_verification_request
     ),
-    prefix="/auth",
+    prefix="/api/v1/auth",
     tags=["auth"],
 )
-app.include_router(fastapi_users.get_users_router(), prefix="/users", tags=["users"])
+app.include_router(fastapi_users.get_users_router(), prefix="/api/v1/users", tags=["users"])
