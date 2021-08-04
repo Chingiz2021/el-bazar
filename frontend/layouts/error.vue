@@ -38,7 +38,7 @@ export default {
 
 <style scopped>
 body {
-  background-color: #263238;
+  background-color: white;
 }
 
 .space img {
