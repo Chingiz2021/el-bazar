@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Публичная оферта</span> </div>
                 <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Хочу в вашу команду</span> </div>
                 <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Помощь</span> </div>
-                <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>+7 (888) 777 77 88</span></div>
+                <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>info@el-bazaar.kz</span></div>
                 <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Конфиденциальность</span></div>
                 <div class="col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Контакты</span></div>
                 <div class=" col-lg-3 col-12 text-lg-left mt-4 text-center"><span>Вопрос-ответ</span></div>
