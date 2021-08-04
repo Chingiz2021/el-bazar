@@ -101,7 +101,7 @@ export default {
         let headers = {
             'Content-Type': 'application/json',
         };
-         this.$axios.$post('http://el-bazaar.kz/api/v1/applications/',data,{
+         this.$axios.$post('https://el-bazaar.kz/api/v1/applications/',data,{
                                                         headers: headers
         }
         )

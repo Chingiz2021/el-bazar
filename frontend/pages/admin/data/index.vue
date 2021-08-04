@@ -68,7 +68,7 @@ export default {
       Authorization: `${store.state.auth.access_token}`,
     };
     return $axios
-      .$get(`http://el-bazaar.kz/api/v1/applications/`, {
+      .$get(`https://el-bazaar.kz/api/v1/applications/`, {
         headers: headers,
       })
       .then((listdata) => {
