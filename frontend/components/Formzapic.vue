@@ -10,7 +10,7 @@
         Мы запускаем свой сервис 1 сентября 2021 года.
       </p>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-12 p-lg-2 p-1">
+        <div class="col-lg-4 col-12 p-lg-2 p-1 text-center">
           <label for="feedback-user" class="form-label text-center">Ваше имя</label>
           <b-form-input
             placeholder="Ваше имя"
@@ -26,8 +26,8 @@
             Успешно.
           </b-form-valid-feedback>
         </div>
-        <div class="col-lg-4 col-12 p-lg-2 p-1">
-           <label for="feedback-phone" class="form-label text-center">11-и значный номер|в формате 7XXXXXXXXXX</label>
+        <div class="col-lg-4 col-12 p-lg-2 p-1 text-center">
+           <label for="feedback-phone" class="form-label text-center">|в формате 7XXXXXXXXXX</label>
             <b-form-input
             placeholder="Ваш номер"
             v-model="phone"
@@ -42,7 +42,7 @@
             Успешно.
           </b-form-valid-feedback>
         </div>
-        <div class="col-lg-4 col-12 p-lg-2 p-1">
+        <div class="col-lg-4 col-12 p-lg-2 p-1 text-center">
           <label for="feedback-email" class="form-label text-center">Ваш email</label>
           <b-form-input
             
