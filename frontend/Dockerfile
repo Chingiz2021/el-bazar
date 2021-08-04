@@ -8,7 +8,8 @@ WORKDIR /app
 RUN apk update && apk upgrade && apk add git
 
 COPY . /app
-RUN npm install
+RUN rm -rf node_modules package-lock.json && npm install
+
 
 # Build app
 RUN npm run build
