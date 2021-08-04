@@ -52,7 +52,7 @@ export default {
         "Content-Type": "application/json"
       };
       let response = this.$axios
-        .$post("/api/auth/jwt/login", formData, {
+        .$post("http://localhost/api/v1/auth/jwt/login", formData, {
           headers
         })
         .then(

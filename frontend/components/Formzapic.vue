@@ -96,7 +96,7 @@ export default {
         let headers = {
             'Content-Type': 'application/json',
         };
-         this.$axios.$post('/api/applications/',data,{
+         this.$axios.$post('http://localhost/api/v1/applications/',data,{
                                                         headers: headers
         }
         )

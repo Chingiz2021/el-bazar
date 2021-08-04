@@ -68,7 +68,7 @@ export default {
         "Content-Type": "application/json",
       };
       this.$axios
-        .$get(`/api/appl/`, { 
+        .$get(`http://localhost/api/v1/appl/`, { 
           headers,
         })
         .then(

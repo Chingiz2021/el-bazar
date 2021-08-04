@@ -41,7 +41,7 @@ export default {
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
     '@nuxtjs/robots',
-    '@nuxtjs/sitemap'
+    
   ],
 
   sitemap: {
@@ -52,13 +52,13 @@ export default {
       '/admin/data',
     ]
   },
-  proxy: {
-    // Simple proxy
-    "/api/": {
-      target: "https://el-bazaar.kz/api/v1",
-      pathRewrite: { "^/api/": "" }
-    }
-  },
+  // proxy: {
+  //   // Simple proxy
+  //   "/api/": {
+  //     target: "http://localhost/api/v1",
+  //     pathRewrite: { "^/api/": "" }
+  //   }
+  // },
 //port
   server: {
     port: 80 // default: 3000
