@@ -27,7 +27,7 @@
           </b-form-valid-feedback>
         </div>
         <div class="col-lg-4 col-12 p-lg-2 p-1 text-center">
-           <label for="feedback-phone" class="form-label text-center">|в формате 7XXXXXXXXXX</label>
+           <label for="feedback-phone" class="form-label text-center">номер|в формате 7XXXXXXXXXX</label>
             <b-form-input
             placeholder="Ваш номер"
             v-model="phone"
