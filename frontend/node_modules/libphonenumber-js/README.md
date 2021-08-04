@@ -90,6 +90,55 @@ If you're not using a bundler then use a [standalone version from a CDN](https:/
 
 ## Use
 
+<!--
+### Importing
+
+When using [Babel](https://babeljs.io/) or [`esm`](npmjs.com/package/esm) or [rollup.js](https://rollupjs.org/) or any other `import` transpiler:
+
+```js
+import parsePhoneNumber, {
+  isPossiblePhoneNumber,
+  isValidPhoneNumber,
+  AsYouType,
+  findPhoneNumbersInText
+} from 'libphonenumber-js'
+```
+
+When using Node.js 14 and not using any of the above:
+
+```js
+import parsePhoneNumber from 'libphonenumber-js'
+
+// or
+
+import libphonenumber from 'libphonenumber-js'
+
+const {
+  default: parsePhoneNumber,
+  isPossiblePhoneNumber,
+  isValidPhoneNumber,
+  AsYouType,
+  findPhoneNumbersInText
+} = libphonenumber
+```
+
+When using Node.js < 14 and not using any of the above:
+
+```js
+const libphonenumber = require('libphonenumber-js')
+
+const {
+  default: parsePhoneNumber,
+  isPossiblePhoneNumber,
+  isValidPhoneNumber,
+  AsYouType,
+  findPhoneNumbersInText
+} = libphonenumber
+```
+
+https://gitlab.com/catamphetamine/libphonenumber-js/-/issues/42
+-->
+
 ### Parse phone number
 
 <!--
