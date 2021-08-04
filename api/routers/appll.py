@@ -29,7 +29,7 @@ def send_message_mail(email,message):
     msg['To'] = you
     part2 = MIMEText(message, 'html')
     msg.attach(part2)
-    mail = smtplib.SMTP('smtp.mail.ru', 587)
+    mail = smtplib.SMTP('smtp.gmail.com', 465)
     mail.ehlo()
     mail.starttls()
     mail.login(settings.mail_username, settings.mail_password)
