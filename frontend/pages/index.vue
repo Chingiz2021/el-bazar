@@ -79,7 +79,7 @@ export default {
             console.log(error);
           }
         );
-      return 507 + this.count;
+      return 507 + Number(this.count) 
     },
   },
 };
