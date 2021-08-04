@@ -52,7 +52,7 @@ export default {
         "Content-Type": "application/json"
       };
       let response = this.$axios
-        .$post("http://el-bazaar.kz/api/v1/auth/jwt/login", formData, {
+        .$post("https://el-bazaar.kz/api/v1/auth/jwt/login", formData, {
           headers
         })
         .then(
