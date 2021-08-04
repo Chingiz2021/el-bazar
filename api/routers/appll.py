@@ -167,7 +167,7 @@ async def create_one(appl: CreateUsers, background_tasks: BackgroundTasks,):
                         <td class="content">
                             <h2>Добро пожаловать в сервис El-Bazaar,</h2>
                             <p>Вы успешно зарегестрировались и вскоре мы с вами свяжемся.</p>
-                            <p>Перейти на сайт <a href="https://el-bazaar.kz">El-Bazaar</a>.</p>
+                            
                             <p><em>– El-Bazaar</em></p>
                         </td>
                     </tr>
@@ -179,7 +179,7 @@ async def create_one(appl: CreateUsers, background_tasks: BackgroundTasks,):
                 <table>
                     <tr>
                         <td class="content footer" align="center">
-                            <p>Sent by <a href="https://el-bazaar.kz">El-Bazaar</a>, Казахстан,</p>
+                            <p>Sent by El-Bazaar, Казахстан,</p>
                             
                         </td>
                     </tr>

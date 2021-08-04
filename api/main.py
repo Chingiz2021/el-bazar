@@ -23,6 +23,7 @@ app = FastAPI(
     openapi_url="/api/v1/openapi.json",
     docs_url="/api/v1/docs",
 )
+# elbazar123456 RcLCsikBpPqbjvMkZMPO
 
 app.add_middleware(
     CORSMiddleware,
