@@ -12,12 +12,12 @@
       <div class="row justify-content-center">
         <div class="col-lg-4 col-12 p-lg-2 p-1">
           <b-form-input
-            
             placeholder="Ваше имя"
             v-model="Username"
             :state="validation"
             id="feedback-user"
           ></b-form-input>
+          <label for="feedback-user" class="form-label">Ваше имя</label>
           <b-form-invalid-feedback :state="validation">
             Имя не меньше 1 символа
           </b-form-invalid-feedback>
@@ -27,12 +27,12 @@
         </div>
         <div class="col-lg-4 col-12 p-lg-2 p-1">
             <b-form-input
-            label="11-и значный номер|в формате 7XXXXXXXXXX"
             placeholder="Ваш номер"
             v-model="phone"
             :state="validphone"
             id="feedback-phone"
           ></b-form-input>
+          <label for="feedback-phone" class="form-label">11-и значный номер|в формате 7XXXXXXXXXX</label>
           <b-form-invalid-feedback :state="validphone">
              Номер 11 цифр и только цифры
           </b-form-invalid-feedback>
@@ -48,12 +48,14 @@
             :state="validemail"
             id="feedback-email"
           ></b-form-input>
+          <label for="feedback-email" class="form-label">Ваш email</label>
           <b-form-invalid-feedback :state="validemail">
             email неверно введен
           </b-form-invalid-feedback>
           <b-form-valid-feedback :state="validemail">
             Успешно.
           </b-form-valid-feedback>
+        
         </div>
       </div>
       <div v-if="alert_true"  class="al-true alert alert-info" role="alert">
