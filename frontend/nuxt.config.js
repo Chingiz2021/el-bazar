@@ -44,14 +44,14 @@ export default {
     
   ],
 
-  sitemap: {
-    generate: true,
-    hostname: 'https://el-bazaar.kz',
-    exclude: [
-      '/admin',
-      '/admin/data',
-    ]
-  },
+  // sitemap: {
+  //   generate: true,
+  //   hostname: 'https://el-bazaar.kz',
+  //   exclude: [
+  //     '/admin',
+  //     '/admin/data',
+  //   ]
+  // },
   // proxy: {
   //   // Simple proxy
   //   "/api/": {
