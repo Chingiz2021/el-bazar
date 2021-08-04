@@ -27,7 +27,7 @@
         </div>
         <div class="col-lg-4 col-12 p-lg-2 p-1">
             <b-form-input
-            
+            label="11-и значный номер|в формате 7XXXXXXXXXX"
             placeholder="Ваш номер"
             v-model="phone"
             :state="validphone"
