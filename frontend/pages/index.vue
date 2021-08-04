@@ -90,7 +90,7 @@ export default {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("/header.png");
+  background-image: url("/header.jpg");
 
   min-height: 120vh;
 }
