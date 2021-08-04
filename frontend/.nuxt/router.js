@@ -5,7 +5,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _0c03e86b = () => interopDefault(import('../pages/admin/index.vue' /* webpackChunkName: "pages/admin/index" */))
-const _714c99be = () => interopDefault(import('../pages/admin/data.vue' /* webpackChunkName: "pages/admin/data" */))
+const _01819ce4 = () => interopDefault(import('../pages/admin/data/index.vue' /* webpackChunkName: "pages/admin/data/index" */))
 const _d65cc82a = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
 const emptyFn = () => {}
@@ -25,7 +25,7 @@ export const routerOptions = {
     name: "admin"
   }, {
     path: "/admin/data",
-    component: _714c99be,
+    component: _01819ce4,
     name: "admin-data"
   }, {
     path: "/",

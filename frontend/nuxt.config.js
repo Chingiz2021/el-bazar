@@ -60,9 +60,9 @@ export default {
   //   }
   // },
 //port
-  server: {
-    port: 80 // default: 3000
-  },
+  // server: {
+  //   port: 80 // default: 3000
+  // },
   robots: {
     /* module options */
   },
