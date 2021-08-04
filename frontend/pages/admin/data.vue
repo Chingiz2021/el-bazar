@@ -68,7 +68,7 @@ export default {
       Authorization: `${store.state.auth.access_token}`,
     };
     return $axios
-      .$get(`http://localhost/api/v1/applications/`, {
+      .$get(`http://el-bazaar.kz/api/v1/applications/`, {
         headers: headers,
       })
       .then((listdata) => {
@@ -101,7 +101,7 @@ export default {
         cheked_apll: cheked_apll,
       };
       let response = this.$axios
-        .$put(`http://localhost/api/v1/applications/${appl_id}`, data, {
+        .$put(`http://el-bazaar.kz/api/v1/applications/${appl_id}`, data, {
           headers,
         })
         .then(
