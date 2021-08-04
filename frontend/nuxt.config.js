@@ -46,13 +46,19 @@ export default {
 
   sitemap: {
     generate: true,
-    hostname: 'http://localhost:3000',
+    hostname: 'https://el-bazaar.kz',
     exclude: [
       '/admin',
       '/admin/data',
     ]
   },
-
+  proxy: {
+    // Simple proxy
+    "/api/": {
+      target: "https://el-bazaar.kz/api/v1",
+      pathRewrite: { "^/api/": "" }
+    }
+  },
 //port
   server: {
     port: 80 // default: 3000

@@ -68,7 +68,7 @@ export default {
       Authorization: `${store.state.auth.access_token}`,
     };
     return $axios
-      .$get(`http://localhost/api/applications`, {
+      .$get(`/api/applications/`, {
         headers: headers,
       })
       .then((listdata) => {
@@ -101,7 +101,7 @@ export default {
         cheked_apll: cheked_apll,
       };
       let response = this.$axios
-        .$put(`http://localhost/api/applications/${appl_id}`, data, {
+        .$put(`/api/applications/${appl_id}`, data, {
           headers,
         })
         .then(
