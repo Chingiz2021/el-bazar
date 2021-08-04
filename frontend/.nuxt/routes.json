@@ -1,0 +1,26 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/home/hleb/El-Bazaar/frontend/pages/admin/index.vue",
+    "chunkName": "pages/admin/index",
+    "url": "/admin",
+    "_name": "_0c03e86b"
+  },
+  {
+    "name": "admin-data",
+    "path": "/admin/data",
+    "component": "/home/hleb/El-Bazaar/frontend/pages/admin/data.vue",
+    "chunkName": "pages/admin/data",
+    "url": "/admin/data",
+    "_name": "_714c99be"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/home/hleb/El-Bazaar/frontend/pages/index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_d65cc82a"
+  }
+]
